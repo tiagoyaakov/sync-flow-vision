@@ -71,6 +71,6 @@
   }
   
   .card-shine {
-    @apply after:absolute after:inset-0 after:content-[''] after:bg-gradient-to-r after:from-transparent after:via-white/10 after:to-transparent after:translate-x-[-200%] hover:after:translate-x-[200%] after:transition-transform after:duration-[1.5s] overflow-hidden relative;
+    @apply after:absolute after:inset-0 after:content-[''] after:bg-gradient-to-r after:from-transparent after:via-white/10 after:to-transparent after:translate-x-[-200%] hover:after:translate-x-[200%] after:transition-transform after:duration-1000 overflow-hidden relative;
   }
 }

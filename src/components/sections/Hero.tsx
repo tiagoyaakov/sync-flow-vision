@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { CircleNotch, Aperture, ChartLineUp, Cpu } from 'lucide-react';
+import { Loader2, Aperture, ChartLine, Cpu } from 'lucide-react';
 import { ButtonGradient } from '@/components/ui/button-gradient';
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
         <Aperture size={64} className="text-elohit-pink/70" />
       </div>
       <div className="absolute bottom-1/4 left-[10%] w-12 h-12 animate-float" style={{ animationDelay: '1.5s' }}>
-        <ChartLineUp size={48} className="text-elohit-purple/70" />
+        <ChartLine size={48} className="text-elohit-purple/70" />
       </div>
       <div className="absolute top-1/3 left-[25%] w-10 h-10 animate-float" style={{ animationDelay: '1s' }}>
         <Cpu size={40} className="text-primary/70" />
@@ -55,7 +55,7 @@ export function Hero() {
             </div>
             
             <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 flex items-center justify-center px-4 py-2 bg-elohit-purple/90 rounded-full">
-              <CircleNotch className="w-5 h-5 animate-spin mr-2" />
+              <Loader2 className="w-5 h-5 animate-spin mr-2" />
               <span className="text-sm font-medium">Automação em execução</span>
             </div>
           </div>
