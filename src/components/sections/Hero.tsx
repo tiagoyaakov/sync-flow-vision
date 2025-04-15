@@ -1,15 +1,44 @@
-
 import React from 'react';
 import { Loader2, Aperture, ChartLine, Cpu } from 'lucide-react';
 import { ButtonGradient } from '@/components/ui/button-gradient';
 
 export function Hero() {
+  const partnerLogos = [
+    { src: "https://i.postimg.cc/bJ7J01WG/open-Ai-Logo-Branco-Png.png", alt: "OpenAI", delay: "0s" },
+    { src: "https://i.postimg.cc/J7XtrdHj/n8nlogopng.png", alt: "N8N", delay: "0.5s" },
+    { src: "https://i.postimg.cc/G25DWBNr/gemini-Logo-Png.png", alt: "Gemini", delay: "1s" },
+    { src: "https://i.postimg.cc/xdkNKj84/claude-Ai-Logo-Png.png", alt: "Claude", delay: "1.5s" },
+    { src: "https://i.postimg.cc/ZKVW2vyQ/cursor-Ai-Logo-Png.png", alt: "Cursor AI", delay: "2s" },
+    { src: "https://i.postimg.cc/hG7hXC3F/supabase-Logo-Png.png", alt: "Supabase", delay: "2.5s" },
+  ];
+
   return (
     <section className="relative pt-20 pb-24 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-elohit-purple/20 blur-3xl animate-pulse-glow"></div>
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 rounded-full bg-elohit-pink/10 blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
+      </div>
+      
+      {/* Floating Partner Logos */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {partnerLogos.map((logo, index) => (
+          <div
+            key={logo.alt}
+            className="absolute w-16 h-16 animate-float opacity-70 hover:opacity-100 transition-opacity"
+            style={{
+              top: `${15 + (index * 10)}%`,
+              left: `${10 + (index * 15)}%`,
+              animationDelay: logo.delay,
+            }}
+          >
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              className="w-full h-full object-contain"
+            />
+          </div>
+        ))}
       </div>
       
       {/* Floating Elements */}
