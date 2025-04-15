@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Loader2, Aperture, ChartLine, Cpu } from 'lucide-react';
 import { ButtonGradient } from '@/components/ui/button-gradient';
@@ -21,14 +22,14 @@ export function Hero() {
       </div>
       
       {/* Floating Partner Logos */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none max-w-4xl mx-auto">
         {partnerLogos.map((logo, index) => (
           <div
             key={logo.alt}
-            className="absolute w-16 h-16 animate-float opacity-70 hover:opacity-100 transition-opacity"
+            className="absolute w-12 h-12 animate-float opacity-70 hover:opacity-100 transition-opacity"
             style={{
-              top: `${15 + (index * 10)}%`,
-              left: `${10 + (index * 15)}%`,
+              top: `${20 + (index * 8)}%`,
+              left: `${5 + (index * 12)}%`,
               animationDelay: logo.delay,
             }}
           >

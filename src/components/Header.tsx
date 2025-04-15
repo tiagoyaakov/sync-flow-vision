@@ -49,13 +49,16 @@ export function Header() {
     )}>
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div>
+          {/* Logo and Text */}
+          <div className="flex items-center gap-3">
             <img 
-              src="https://i.postimg.cc/63Y2d7wn/LOGO-ELOHIT-500x500.png" 
+              src="https://i.postimg.cc/fbJtsWhv/LOGO-ELOHIT-500x500-2.png" 
               alt="Elohit Sync Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
+            <h1 className="text-2xl font-bold hidden md:block">
+              Elohit <span className="text-gradient">Sync</span>
+            </h1>
           </div>
           
           {/* Desktop Navigation */}
